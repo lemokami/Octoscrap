@@ -1,6 +1,7 @@
+#install python3 first
 import requests
 import os
-from bs4 import BeautifulSoup as bs
+from bs4 import BeautifulSoup as bs #pip install bs4
 import pprint
 
 try:
