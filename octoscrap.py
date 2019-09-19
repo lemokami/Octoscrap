@@ -16,7 +16,7 @@ base_url = "https://octodex.github.com/"
 
 resp = requests.get(base_url)
 soup = bs(resp.text, 'html.parser')
-
+# print(soup)
 img = soup.find_all("img")
 links = [x.get('data-src') for x in img]
 
