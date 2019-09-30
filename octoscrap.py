@@ -35,8 +35,8 @@ for link in img_source:
     r = requests.get(link)
 
     if(os.path.exists(fname)):
-        print(f"{fname} exists")
+        print(fname + " exists")
     else:
-        print(f"Downloading {fname}")
+        print("Downloading "+ fname)
         with open(fname,'wb') as f:
             f.write(r.content)
